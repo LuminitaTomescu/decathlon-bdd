@@ -39,8 +39,8 @@ public class SearchDefinitions {
         searchField2.sendKeys(searchKeyword2);
     }
 
-    @When("the user types a 3.000 characters keyword")
-    public void theUserTypesA3000CharactersKeyword () {
+    @When("the user types invalid characters keyword")
+    public void theUserTypesInvalidCharactersKeyword () {
         WebElement searchField2 = driver.findElement(By.id("header-searchbar"));
         searchField2.sendKeys(searchKeyword3);
     }
@@ -64,8 +64,8 @@ public class SearchDefinitions {
 
         Assert.assertEquals(searchKeyword1, searchResultValue);
 
-        System.out.println("Produsul cautat este: " + searchKeyword1);
-        System.out.println("Produsul gasit este: " + searchResultValue);
+        System.out.println("The searched product is: " + searchKeyword1);
+        System.out.println("The found product is: " + searchResultValue);
 
         driver.quit();
     }
@@ -77,8 +77,8 @@ public class SearchDefinitions {
 
         Assert.assertTrue(searchKeyword2.equalsIgnoreCase(searchResultValue));
 
-        System.out.println("Produsul cautat este: " + searchKeyword2);
-        System.out.println("Produsul gasit este: " + searchResultValue);
+        System.out.println("The searched product is: " + searchKeyword2);
+        System.out.println("The found product is: " + searchResultValue);
 
         driver.quit();
     }
@@ -88,7 +88,7 @@ public class SearchDefinitions {
         WebElement searchResult = driver.findElement(By.xpath("//*[@id=\"middle\"]/div[2]/div/h2"));
         String searchResultValue = searchResult.getText();
 
-        System.out.println("Produsul cautat este: " + searchKeyword3);
+        System.out.println("The searched product is: " + searchKeyword3);
         System.out.println(searchResultValue);
 
         driver.quit();

@@ -20,7 +20,7 @@ Feature: Search for products by using search field
 
   Scenario: As a user I would like to receive an error page on invalid search keyword
     Given the user is on the search field
-    When the user types a 3.000 characters keyword
+    When the user types invalid characters keyword
     And the user presses the submit Button from the keyboard
     Then the user will receive an error page
 
