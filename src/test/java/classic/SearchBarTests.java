@@ -28,8 +28,8 @@ public class SearchBarTests extends BaseTest {
         String searchResultValue = searchResult.getText();
 
         Assert.assertEquals(searchKeyword, searchResultValue);
-        System.out.println("Produsul cautat este: " + searchKeyword);
-        System.out.println("Produsul gasit este: " + searchResultValue);
+        System.out.println("The searched product is:  " + searchKeyword);
+        System.out.println("The found product is: " + searchResultValue);
     }
 
     @Test
@@ -52,8 +52,8 @@ public class SearchBarTests extends BaseTest {
         String searchResultValue = searchResult.getText();
 
         Assert.assertEquals(searchKeyword, searchResultValue);
-        System.out.println("Produsul cautat este: " + searchKeyword);
-        System.out.println("Produsul gasit este: " + searchResultValue);
+        System.out.println("The searched product is: " + searchKeyword);
+        System.out.println("The found product is: " + searchResultValue);
     }
 
     @Test
@@ -75,8 +75,8 @@ public class SearchBarTests extends BaseTest {
         WebElement searchResult = driver.findElement(By.xpath("//*[@id=\"middle\"]/div[1]/div[1]/h1"));
         String searchResultValue = searchResult.getText();
         Assert.assertTrue(searchKeyword.equalsIgnoreCase(searchResultValue));
-        System.out.println("Produsul cautat este: " + searchKeyword);
-        System.out.println("Produsul gasit este: " + searchResultValue);
+        System.out.println("The searched product is: " + searchKeyword);
+        System.out.println("The found product is: " + searchResultValue);
     }
 
     @Test
@@ -97,7 +97,7 @@ public class SearchBarTests extends BaseTest {
 
         WebElement searchResult = driver.findElement(By.xpath("//*[@id=\"middle\"]/div[2]/div/h2"));
         String searchResultValue = searchResult.getText();
-        System.out.println("Produsul cautat este: " + searchKeyword);
+        System.out.println("The found product is: " + searchKeyword);
         System.out.println(searchResultValue);
     }
 }
